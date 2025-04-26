@@ -1,3 +1,18 @@
+# Tenzies Game
+
+A fun and interactive React-based Tenzies game where the goal is to roll dice until all of them show the same number. Freeze the dice you like and roll the others to match them. The game ends when all the dice show the same value!
+
+## Features
+- Roll the dice until all are the same.
+- Click a die to freeze its value.
+- Confetti animation when you win the game.
+
+## Installation
+
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/Kirubhakaran003/Tenzies.git
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
