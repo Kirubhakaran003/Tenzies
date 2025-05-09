@@ -17,21 +17,22 @@ body {
 div#root {
   height: 100%;
   width: 100%;
-  /* Removed max-height and max-width */
+  max-height: 500px;
+  max-width: 500px;
 }
 
 main {
   background-color: #F5F5F5;
-  min-height: 100%; /* Ensures full height of the screen */
+  height: 100%;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centers content vertically */
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .title {
-  font-size: 3rem; /* Scalable with screen size */
+  font-size: 40px;
   margin: 0;
 }
 
@@ -40,26 +41,25 @@ main {
   font-weight: 400;
   margin-top: 0;
   text-align: center;
-  font-size: 1.2rem;
 }
 
 .rollButton {
-  width: 60%; /* Makes the button responsive */
+  width: auto;
   margin-top: 50px;
-  padding: 10px 20px;
+  padding: 5px 20px;
   border: none;
   border-radius: 6px;
   background-color: #5035FF;
   font-family: Karla;
   font-weight: bolder;
-  font-size: 2vw; /* Adjusts font size based on viewport */
-  color: #fff;
+  font-size: 25px;
+  color: #ffff;
   cursor: pointer;
 }
 
 .dice-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); /* Makes grid responsive */
+  grid-template: auto auto / repeat(5, 1fr);
   gap: 20px;
 }
 
@@ -74,19 +74,4 @@ main {
   font-size: 1.75rem;
   font-weight: bold;
   cursor: pointer;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .title {
-    font-size: 2rem;
-  }
-
-  .instructions {
-    font-size: 1rem;
-  }
-
-  .rollButton {
-    font-size: 4vw; /* Adjusts button size on smaller screens */
-  }
 }
