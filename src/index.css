@@ -43,9 +43,9 @@ main {
   text-align: center;
 }
 
-.rollButton {
+.rollButton{
   width: auto;
-  margin-top: 50px;
+  margin-top:50px ;
   padding: 5px 20px;
   border: none;
   border-radius: 6px;
